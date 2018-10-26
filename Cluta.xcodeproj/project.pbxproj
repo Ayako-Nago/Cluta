@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E142AD30358E662A2427D1A /* Pods_ClutaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14666F36D635FF29E862109 /* Pods_ClutaUITests.framework */; };
+		3E3B4A2310CE562536C88844 /* Pods_Cluta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7079FE3867FE9E132EC544A /* Pods_Cluta.framework */; };
+		C24E976B2154EF6C00A0ADC5 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97652154EF6C00A0ADC5 /* ao.png */; };
+		C24E976C2154EF6C00A0ADC5 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97662154EF6C00A0ADC5 /* clear.png */; };
+		C24E976D2154EF6C00A0ADC5 /* hasen.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97672154EF6C00A0ADC5 /* hasen.png */; };
+		C24E976E2154EF6C00A0ADC5 /* hasen2.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97682154EF6C00A0ADC5 /* hasen2.png */; };
+		C24E976F2154EF6C00A0ADC5 /* hasen3.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97692154EF6C00A0ADC5 /* hasen3.png */; };
+		C24E97702154EF6C00A0ADC5 /* shiro.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E976A2154EF6C00A0ADC5 /* shiro.png */; };
 		C25F436F214BACAC0037CBD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F436E214BACAC0037CBD0 /* AppDelegate.swift */; };
 		C25F4371214BACAC0037CBD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F4370214BACAC0037CBD0 /* ViewController.swift */; };
 		C25F4374214BACAC0037CBD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F4372214BACAC0037CBD0 /* Main.storyboard */; };
@@ -14,6 +22,9 @@
 		C25F4379214BACB70037CBD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F4377214BACB70037CBD0 /* LaunchScreen.storyboard */; };
 		C25F4384214BACB70037CBD0 /* ClutaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F4383214BACB70037CBD0 /* ClutaTests.swift */; };
 		C25F438F214BACB70037CBD0 /* ClutaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F438E214BACB70037CBD0 /* ClutaUITests.swift */; };
+		C25F439D214BB7380037CBD0 /* ZakkuriGothic-BLK.otf in Resources */ = {isa = PBXBuildFile; fileRef = C25F439C214BB71A0037CBD0 /* ZakkuriGothic-BLK.otf */; };
+		C2AB6BBA21831ECD003D20A9 /* RadarbarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB6BB921831ECD003D20A9 /* RadarbarChartViewController.swift */; };
+		F0CB0795DFDF63118C98B062 /* Pods_ClutaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0CEBA8A79A36909433A317 /* Pods_ClutaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		143F7E91BFD7FB9F023860CE /* Pods-Cluta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cluta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cluta/Pods-Cluta.release.xcconfig"; sourceTree = "<group>"; };
+		3B0CEBA8A79A36909433A317 /* Pods_ClutaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClutaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66383DE799BB54D7185E2B41 /* Pods-ClutaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaTests/Pods-ClutaTests.release.xcconfig"; sourceTree = "<group>"; };
+		926FA585E5FE0C65CBB40A62 /* Pods-ClutaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaTests/Pods-ClutaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C24E97652154EF6C00A0ADC5 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
+		C24E97662154EF6C00A0ADC5 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		C24E97672154EF6C00A0ADC5 /* hasen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hasen.png; sourceTree = "<group>"; };
+		C24E97682154EF6C00A0ADC5 /* hasen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hasen2.png; sourceTree = "<group>"; };
+		C24E97692154EF6C00A0ADC5 /* hasen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hasen3.png; sourceTree = "<group>"; };
+		C24E976A2154EF6C00A0ADC5 /* shiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shiro.png; sourceTree = "<group>"; };
 		C25F436B214BACAC0037CBD0 /* Cluta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cluta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25F436E214BACAC0037CBD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C25F4370214BACAC0037CBD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +68,13 @@
 		C25F438A214BACB70037CBD0 /* ClutaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClutaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25F438E214BACB70037CBD0 /* ClutaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClutaUITests.swift; sourceTree = "<group>"; };
 		C25F4390214BACB70037CBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25F439C214BB71A0037CBD0 /* ZakkuriGothic-BLK.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZakkuriGothic-BLK.otf"; sourceTree = "<group>"; };
+		C2AB6BB921831ECD003D20A9 /* RadarbarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarbarChartViewController.swift; sourceTree = "<group>"; };
+		D278C482D788CD60F93337BA /* Pods-ClutaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaUITests/Pods-ClutaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6D36F2304788D76644F0FED /* Pods-ClutaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaUITests/Pods-ClutaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E26E2BFE250F8A24B054F84F /* Pods-Cluta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cluta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cluta/Pods-Cluta.debug.xcconfig"; sourceTree = "<group>"; };
+		E7079FE3867FE9E132EC544A /* Pods_Cluta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cluta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14666F36D635FF29E862109 /* Pods_ClutaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClutaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3B4A2310CE562536C88844 /* Pods_Cluta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CB0795DFDF63118C98B062 /* Pods_ClutaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +98,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E142AD30358E662A2427D1A /* Pods_ClutaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		388583688DFDF7CCDC1844BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7079FE3867FE9E132EC544A /* Pods_Cluta.framework */,
+				3B0CEBA8A79A36909433A317 /* Pods_ClutaTests.framework */,
+				F14666F36D635FF29E862109 /* Pods_ClutaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9407D89F992C4D9462A76846 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E26E2BFE250F8A24B054F84F /* Pods-Cluta.debug.xcconfig */,
+				143F7E91BFD7FB9F023860CE /* Pods-Cluta.release.xcconfig */,
+				926FA585E5FE0C65CBB40A62 /* Pods-ClutaTests.debug.xcconfig */,
+				66383DE799BB54D7185E2B41 /* Pods-ClutaTests.release.xcconfig */,
+				D278C482D788CD60F93337BA /* Pods-ClutaUITests.debug.xcconfig */,
+				D6D36F2304788D76644F0FED /* Pods-ClutaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C24E97642154EF6C00A0ADC5 /* あーやの五角形 */ = {
+			isa = PBXGroup;
+			children = (
+				C24E97652154EF6C00A0ADC5 /* ao.png */,
+				C24E97662154EF6C00A0ADC5 /* clear.png */,
+				C24E97672154EF6C00A0ADC5 /* hasen.png */,
+				C24E97682154EF6C00A0ADC5 /* hasen2.png */,
+				C24E97692154EF6C00A0ADC5 /* hasen3.png */,
+				C24E976A2154EF6C00A0ADC5 /* shiro.png */,
+			);
+			path = "あーやの五角形";
+			sourceTree = "<group>";
+		};
 		C25F4362214BACAC0037CBD0 = {
 			isa = PBXGroup;
 			children = (
+				C25F439C214BB71A0037CBD0 /* ZakkuriGothic-BLK.otf */,
 				C25F436D214BACAC0037CBD0 /* Cluta */,
 				C25F4382214BACB70037CBD0 /* ClutaTests */,
 				C25F438D214BACB70037CBD0 /* ClutaUITests */,
 				C25F436C214BACAC0037CBD0 /* Products */,
+				9407D89F992C4D9462A76846 /* Pods */,
+				388583688DFDF7CCDC1844BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +167,14 @@
 		C25F436D214BACAC0037CBD0 /* Cluta */ = {
 			isa = PBXGroup;
 			children = (
+				C24E97642154EF6C00A0ADC5 /* あーやの五角形 */,
 				C25F436E214BACAC0037CBD0 /* AppDelegate.swift */,
 				C25F4370214BACAC0037CBD0 /* ViewController.swift */,
 				C25F4372214BACAC0037CBD0 /* Main.storyboard */,
 				C25F4375214BACB70037CBD0 /* Assets.xcassets */,
 				C25F4377214BACB70037CBD0 /* LaunchScreen.storyboard */,
 				C25F437A214BACB70037CBD0 /* Info.plist */,
+				C2AB6BB921831ECD003D20A9 /* RadarbarChartViewController.swift */,
 			);
 			path = Cluta;
 			sourceTree = "<group>";
@@ -132,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C25F4393214BACB70037CBD0 /* Build configuration list for PBXNativeTarget "Cluta" */;
 			buildPhases = (
+				F7CEF24AE8B6812CAF7792DC /* [CP] Check Pods Manifest.lock */,
 				C25F4367214BACAC0037CBD0 /* Sources */,
 				C25F4368214BACAC0037CBD0 /* Frameworks */,
 				C25F4369214BACAC0037CBD0 /* Resources */,
+				B612F00162E953B5F00F0B02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C25F4396214BACB70037CBD0 /* Build configuration list for PBXNativeTarget "ClutaTests" */;
 			buildPhases = (
+				5B71E39A3AE0603C62D87124 /* [CP] Check Pods Manifest.lock */,
 				C25F437B214BACB70037CBD0 /* Sources */,
 				C25F437C214BACB70037CBD0 /* Frameworks */,
 				C25F437D214BACB70037CBD0 /* Resources */,
@@ -167,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C25F4399214BACB70037CBD0 /* Build configuration list for PBXNativeTarget "ClutaUITests" */;
 			buildPhases = (
+				14ADD7E1FBA76336F7742AD8 /* [CP] Check Pods Manifest.lock */,
 				C25F4386214BACB70037CBD0 /* Sources */,
 				C25F4387214BACB70037CBD0 /* Frameworks */,
 				C25F4388214BACB70037CBD0 /* Resources */,
@@ -229,8 +305,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24E976B2154EF6C00A0ADC5 /* ao.png in Resources */,
+				C24E976D2154EF6C00A0ADC5 /* hasen.png in Resources */,
+				C25F439D214BB7380037CBD0 /* ZakkuriGothic-BLK.otf in Resources */,
 				C25F4379214BACB70037CBD0 /* LaunchScreen.storyboard in Resources */,
+				C24E976F2154EF6C00A0ADC5 /* hasen3.png in Resources */,
+				C24E976C2154EF6C00A0ADC5 /* clear.png in Resources */,
 				C25F4376214BACB70037CBD0 /* Assets.xcassets in Resources */,
+				C24E97702154EF6C00A0ADC5 /* shiro.png in Resources */,
+				C24E976E2154EF6C00A0ADC5 /* hasen2.png in Resources */,
 				C25F4374214BACAC0037CBD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,11 +334,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14ADD7E1FBA76336F7742AD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClutaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B71E39A3AE0603C62D87124 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClutaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B612F00162E953B5F00F0B02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cluta/Pods-Cluta-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cluta/Pods-Cluta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7CEF24AE8B6812CAF7792DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cluta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C25F4367214BACAC0037CBD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AB6BBA21831ECD003D20A9 /* RadarbarChartViewController.swift in Sources */,
 				C25F4371214BACAC0037CBD0 /* ViewController.swift in Sources */,
 				C25F436F214BACAC0037CBD0 /* AppDelegate.swift in Sources */,
 			);
@@ -428,6 +603,7 @@
 		};
 		C25F4394214BACB70037CBD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26E2BFE250F8A24B054F84F /* Pods-Cluta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +621,7 @@
 		};
 		C25F4395214BACB70037CBD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 143F7E91BFD7FB9F023860CE /* Pods-Cluta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +639,7 @@
 		};
 		C25F4397214BACB70037CBD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926FA585E5FE0C65CBB40A62 /* Pods-ClutaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +660,7 @@
 		};
 		C25F4398214BACB70037CBD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66383DE799BB54D7185E2B41 /* Pods-ClutaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +681,7 @@
 		};
 		C25F439A214BACB70037CBD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D278C482D788CD60F93337BA /* Pods-ClutaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +701,7 @@
 		};
 		C25F439B214BACB70037CBD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D36F2304788D76644F0FED /* Pods-ClutaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
