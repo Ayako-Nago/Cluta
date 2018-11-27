@@ -17,7 +17,7 @@ class RadarbarChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        skill = ["スパイク","カット","フェイント","ブロック","サーブ"]
+        skill = ["A","B","C","D","E"]
         let unitsSold = [50, 75, 50, 25, 100]
         
         setChart(dataPoints: skill,values:unitsSold)

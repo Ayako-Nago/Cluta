@@ -23,7 +23,8 @@
 		C25F4384214BACB70037CBD0 /* ClutaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F4383214BACB70037CBD0 /* ClutaTests.swift */; };
 		C25F438F214BACB70037CBD0 /* ClutaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F438E214BACB70037CBD0 /* ClutaUITests.swift */; };
 		C25F439D214BB7380037CBD0 /* ZakkuriGothic-BLK.otf in Resources */ = {isa = PBXBuildFile; fileRef = C25F439C214BB71A0037CBD0 /* ZakkuriGothic-BLK.otf */; };
-		C2AB6BBA21831ECD003D20A9 /* RadarbarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB6BB921831ECD003D20A9 /* RadarbarChartViewController.swift */; };
+		C26F7DA52195A3BF00BA32E5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */; };
+		C2711993219ED90100B34D49 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2711992219ED90100B34D49 /* AddDataViewController.swift */; };
 		F0CB0795DFDF63118C98B062 /* Pods_ClutaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0CEBA8A79A36909433A317 /* Pods_ClutaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +70,8 @@
 		C25F438E214BACB70037CBD0 /* ClutaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClutaUITests.swift; sourceTree = "<group>"; };
 		C25F4390214BACB70037CBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C25F439C214BB71A0037CBD0 /* ZakkuriGothic-BLK.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZakkuriGothic-BLK.otf"; sourceTree = "<group>"; };
-		C2AB6BB921831ECD003D20A9 /* RadarbarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarbarChartViewController.swift; sourceTree = "<group>"; };
+		C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		C2711992219ED90100B34D49 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
 		D278C482D788CD60F93337BA /* Pods-ClutaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaUITests/Pods-ClutaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6D36F2304788D76644F0FED /* Pods-ClutaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaUITests/Pods-ClutaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E26E2BFE250F8A24B054F84F /* Pods-Cluta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cluta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cluta/Pods-Cluta.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,7 +176,8 @@
 				C25F4375214BACB70037CBD0 /* Assets.xcassets */,
 				C25F4377214BACB70037CBD0 /* LaunchScreen.storyboard */,
 				C25F437A214BACB70037CBD0 /* Info.plist */,
-				C2AB6BB921831ECD003D20A9 /* RadarbarChartViewController.swift */,
+				C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */,
+				C2711992219ED90100B34D49 /* AddDataViewController.swift */,
 			);
 			path = Cluta;
 			sourceTree = "<group>";
@@ -430,9 +433,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2AB6BBA21831ECD003D20A9 /* RadarbarChartViewController.swift in Sources */,
+				C26F7DA52195A3BF00BA32E5 /* DataViewController.swift in Sources */,
 				C25F4371214BACAC0037CBD0 /* ViewController.swift in Sources */,
 				C25F436F214BACAC0037CBD0 /* AppDelegate.swift in Sources */,
+				C2711993219ED90100B34D49 /* AddDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
