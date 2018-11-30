@@ -19,9 +19,9 @@ class AddDataViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if UserDefaults.standard.object(forKey: "DataList") != nil {
-//            DataListArray = saveData.object(forKey: "DataList") as! [String]
-//        }
+        if UserDefaults.standard.object(forKey: "DataList") != nil {
+            DataListArray = saveData.object(forKey: "DataList") as! [String]
+        }
 
         
     }
