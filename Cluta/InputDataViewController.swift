@@ -9,8 +9,25 @@
 import UIKit
 
 class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    var all: Int =  0
+    var clear: Int = 0
+    
+    var saveDataAllA : UserDefaults = UserDefaults.standard
+    var saveDataClearA : UserDefaults = UserDefaults.standard
+    var saveDataAllB : UserDefaults = UserDefaults.standard
+    var saveDataClearB : UserDefaults = UserDefaults.standard
+    var saveDataAllC : UserDefaults = UserDefaults.standard
+    var saveDataClearC : UserDefaults = UserDefaults.standard
+    var saveDataAllD : UserDefaults = UserDefaults.standard
+    var saveDataClearD : UserDefaults = UserDefaults.standard
+    var saveDataAllE : UserDefaults = UserDefaults.standard
+    var saveDataClearE : UserDefaults = UserDefaults.standard
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let DataCell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
+        let DataCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
         DataCell.textLabel!.text = DataListArray[indexPath.row]
         return DataCell
     }
@@ -22,6 +39,10 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         // Do any additional setup after loading the view, typically from a nib.
         print("Did")
         
@@ -33,5 +54,16 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataListArray.count
     }
+    
+    @IBAction func ok(){
+        all = all + 1
+        clear = clear + 1
+        
+    }
+    
+    @IBAction func ng(){
+        all = all + 1
+    }
+    
     
 }

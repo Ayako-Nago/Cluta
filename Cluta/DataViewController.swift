@@ -49,6 +49,16 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
         return DataCell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            DataListArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            print(DataListArray)
+            saveData.set(DataListArray, forKey: "DataList")
+            print(DataListArray)
+        }
+    }
+    
     
     @IBAction func next(){
 //        let addViewController = AddDataViewController()

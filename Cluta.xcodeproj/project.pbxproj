@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E142AD30358E662A2427D1A /* Pods_ClutaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14666F36D635FF29E862109 /* Pods_ClutaUITests.framework */; };
 		3E3B4A2310CE562536C88844 /* Pods_Cluta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7079FE3867FE9E132EC544A /* Pods_Cluta.framework */; };
+		C2383A6721BA800600686D0D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2383A6621BA800600686D0D /* ChartViewController.swift */; };
 		C24E976B2154EF6C00A0ADC5 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97652154EF6C00A0ADC5 /* ao.png */; };
 		C24E976C2154EF6C00A0ADC5 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97662154EF6C00A0ADC5 /* clear.png */; };
 		C24E976D2154EF6C00A0ADC5 /* hasen.png in Resources */ = {isa = PBXBuildFile; fileRef = C24E97672154EF6C00A0ADC5 /* hasen.png */; };
@@ -55,6 +56,7 @@
 		3B0CEBA8A79A36909433A317 /* Pods_ClutaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClutaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66383DE799BB54D7185E2B41 /* Pods-ClutaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaTests/Pods-ClutaTests.release.xcconfig"; sourceTree = "<group>"; };
 		926FA585E5FE0C65CBB40A62 /* Pods-ClutaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClutaTests/Pods-ClutaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2383A6621BA800600686D0D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		C24E97652154EF6C00A0ADC5 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
 		C24E97662154EF6C00A0ADC5 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
 		C24E97672154EF6C00A0ADC5 /* hasen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hasen.png; sourceTree = "<group>"; };
@@ -189,10 +191,11 @@
 				C25F437A214BACB70037CBD0 /* Info.plist */,
 				C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */,
 				C2711992219ED90100B34D49 /* AddDataViewController.swift */,
-				C2F5DB1B21B1302600074443 /* InfoViewController.swift */,
 				C2F5DB2121B143DB00074443 /* InformationViewController.swift */,
-				C2F5DB2521B14B7400074443 /* InputDataViewController.swift */,
+				C2F5DB1B21B1302600074443 /* InfoViewController.swift */,
 				C2F5DB2321B14AC300074443 /* InputViewController.swift */,
+				C2F5DB2521B14B7400074443 /* InputDataViewController.swift */,
+				C2383A6621BA800600686D0D /* ChartViewController.swift */,
 			);
 			path = Cluta;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				C25F436F214BACAC0037CBD0 /* AppDelegate.swift in Sources */,
 				C2711993219ED90100B34D49 /* AddDataViewController.swift in Sources */,
 				C2F5DB1C21B1302600074443 /* InfoViewController.swift in Sources */,
+				C2383A6721BA800600686D0D /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

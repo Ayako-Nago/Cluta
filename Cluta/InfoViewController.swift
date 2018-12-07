@@ -13,11 +13,11 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let DataCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
-        let DataCell = tableView.dequeueReusableCell(withIdentifier: "DataCell")
-//        DataCell.textLabel!.text = DataListArray[indexPath.row]
-        DataCell?.textLabel?.text = "test"
-        return DataCell!
+        let DataCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
+  //      let DataCell = tableView.dequeueReusableCell(withIdentifier: "DataCell")
+        DataCell.textLabel!.text = DataListArray[indexPath.row]
+  //      DataCell?.textLabel?.text = "test"
+        return DataCell
     }
     
     
@@ -42,8 +42,8 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return DataListArray.count
-        return 3
+        return DataListArray.count
+
     }
     
     

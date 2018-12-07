@@ -12,7 +12,6 @@ class InformationViewController: UIViewController {
     
     @IBAction func buttonTapped(sender : AnyObject) {
         performSegue(withIdentifier: "toInfo",sender: nil)
-        print("hogehoge")
     }
     
 }

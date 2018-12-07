@@ -10,7 +10,10 @@ import UIKit
 
 class AddDataViewController: UIViewController{
     
-    var DataListArray = [String]()
+    var DataListArray : [DataDictionary]()
+    var DataDictionary : [String:Any] = ["name":"name","A":0,"B":0,"C":0,"D":0,"E":0]
+    
+    //var DataListArray: Dictionary = ["name":"A","B":"C","D":"E"]
     
     var saveData : UserDefaults = UserDefaults.standard
     
@@ -20,13 +23,14 @@ class AddDataViewController: UIViewController{
         super.viewDidLoad()
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
-            DataListArray = saveData.object(forKey: "DataList") as! [String]
+            DataListArray = saveData.object(forKey: "DataList") as! [Dictionary<String:Any>]
         }
 
         
     }
     
     @IBAction func save(_ sender: Any) {
+        
         
         DataListArray.append(AddTextField.text!)
         
