@@ -14,4 +14,9 @@ class InformationViewController: UIViewController {
         performSegue(withIdentifier: "toInfo",sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var infoViewController = segue.destination as? InfoViewController
+        infoViewController?.number
+    }
+    
 }

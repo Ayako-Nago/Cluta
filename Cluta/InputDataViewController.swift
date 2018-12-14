@@ -28,12 +28,12 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let DataCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
-        DataCell.textLabel!.text = DataListArray[indexPath.row]
+        DataCell.textLabel!.text = DataListArray[indexPath.row]["name"] as? String
         return DataCell
     }
     
     
-    var DataListArray = [String]()
+    var DataListArray = [[String :Any]]()
     
     var saveData : UserDefaults = UserDefaults.standard
     
@@ -47,7 +47,8 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
         print("Did")
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
-            DataListArray = saveData.object(forKey: "DataList") as! [String]
+            //DataListArray = saveData.object(forKey: "DataList") as! [String]
+            DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
         }
     }
     

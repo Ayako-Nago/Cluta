@@ -10,18 +10,16 @@ import UIKit
 
 class InfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var number: Int!
     @IBOutlet weak var tableView: UITableView!
+    var DataListArray = [[String: Any]]()
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let DataCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
-  //      let DataCell = tableView.dequeueReusableCell(withIdentifier: "DataCell")
-        DataCell.textLabel!.text = DataListArray[indexPath.row]
-  //      DataCell?.textLabel?.text = "test"
+        DataCell.textLabel!.text = DataListArray[indexPath.row]["name"] as? String
+  
         return DataCell
     }
-    
-    
-    var DataListArray = [String]()
     
     var saveData : UserDefaults = UserDefaults.standard
     
@@ -36,7 +34,7 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         print("Did")
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
-            DataListArray = saveData.object(forKey: "DataList") as! [String]
+            DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
         }
         print(DataListArray)
     }
