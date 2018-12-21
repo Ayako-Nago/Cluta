@@ -8,14 +8,23 @@
 
 import UIKit
 
+
+
 class InfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     var number: Int!
+    let segueNumber: UserDefaults = UserDefaults.standard
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     var DataListArray = [[String: Any]]()
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let DataCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
+        
         DataCell.textLabel!.text = DataListArray[indexPath.row]["name"] as? String
   
         return DataCell
@@ -31,12 +40,13 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
-        print("Did")
+        print(number)
+        //print("Did")
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
         }
-        print(DataListArray)
+        //print(DataListArray)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,3 +56,4 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
 }
+

@@ -9,9 +9,12 @@ import UIKit
 
 class InPutViewController: UIViewController {
     
+   
+    
     @IBAction func buttonTapped(sender : AnyObject) {
         performSegue(withIdentifier: "toAdd",sender: nil)
         print("hogehoge")
     }
+    
     
 }
