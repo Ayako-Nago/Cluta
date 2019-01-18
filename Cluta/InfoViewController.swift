@@ -39,14 +39,12 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        print(number)
-        //print("Did")
+
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
         }
-        //print(DataListArray)
+        print(number)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,6 +52,7 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
+  
     
 }
 

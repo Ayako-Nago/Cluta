@@ -10,6 +10,7 @@ import UIKit
 
 class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    var number: Int!
     var all: Int =  0
     var clear: Int = 0
     
@@ -43,28 +44,13 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         
-        // Do any additional setup after loading the view, typically from a nib.
-        print("Did")
-        
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             //DataListArray = saveData.object(forKey: "DataList") as! [String]
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
         }
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataListArray.count
     }
-    
-    @IBAction func ok(){
-        all = all + 1
-        clear = clear + 1
-        
-    }
-    
-    @IBAction func ng(){
-        all = all + 1
-    }
-    
     
 }

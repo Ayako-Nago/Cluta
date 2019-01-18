@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X3R-bl-wy2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X3R-bl-wy2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +32,7 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="jmU-e5-9VK" eventType="touchUpInside" id="Qgw-ng-VEg"/>
+                                    <action selector="cTapped" destination="jmU-e5-9VK" eventType="touchUpInside" id="bP4-ZU-J8J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBX-zY-GPE">
@@ -44,7 +44,7 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="jmU-e5-9VK" eventType="touchUpInside" id="wD7-8l-nEF"/>
+                                    <action selector="dTapped" destination="jmU-e5-9VK" eventType="touchUpInside" id="PWS-b3-a7q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kih-FF-VIT">
@@ -56,7 +56,7 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="jmU-e5-9VK" eventType="touchUpInside" id="Zfa-sY-IQr"/>
+                                    <action selector="bTapped" destination="jmU-e5-9VK" eventType="touchUpInside" id="Ytg-KP-8iv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGg-Px-ja9">
@@ -68,7 +68,7 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="jmU-e5-9VK" eventType="touchUpInside" id="G3H-P2-0XL"/>
+                                    <action selector="eTapped" destination="jmU-e5-9VK" eventType="touchUpInside" id="0Sa-hg-spj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsx-yv-y2A">
@@ -80,7 +80,7 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="jmU-e5-9VK" eventType="touchUpInside" id="Ghy-tk-KwW"/>
+                                    <action selector="aTapped" destination="jmU-e5-9VK" eventType="touchUpInside" id="zp6-YY-zI4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,7 +188,6 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="OP7-dX-GDx" eventType="touchUpInside" id="fFR-ev-Ljb"/>
                                     <action selector="cTapped" destination="OP7-dX-GDx" eventType="touchUpInside" id="Rq8-f7-XX9"/>
                                 </connections>
                             </button>
@@ -201,7 +200,6 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="OP7-dX-GDx" eventType="touchUpInside" id="Auh-mr-Rqt"/>
                                     <action selector="dTapped" destination="OP7-dX-GDx" eventType="touchUpInside" id="WiM-EP-gSu"/>
                                 </connections>
                             </button>
@@ -215,7 +213,6 @@
                                 </state>
                                 <connections>
                                     <action selector="bTapped" destination="OP7-dX-GDx" eventType="touchUpInside" id="imh-OU-2xS"/>
-                                    <action selector="buttonTappedWithSender:" destination="OP7-dX-GDx" eventType="touchUpInside" id="pTA-oD-KRp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcp-K8-4nc">
@@ -227,7 +224,6 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedWithSender:" destination="OP7-dX-GDx" eventType="touchUpInside" id="IFg-3I-FKu"/>
                                     <action selector="eTapped" destination="OP7-dX-GDx" eventType="touchUpInside" id="fck-Le-aAX"/>
                                 </connections>
                             </button>
@@ -241,7 +237,6 @@
                                 </state>
                                 <connections>
                                     <action selector="aTapped" destination="OP7-dX-GDx" eventType="touchUpInside" id="7gV-tc-IJu"/>
-                                    <action selector="buttonTappedWithSender:" destination="OP7-dX-GDx" eventType="touchUpInside" id="6G5-CL-i4t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyL-bG-fdA">
@@ -250,9 +245,6 @@
                                 <state key="normal" title="All">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="buttonTappedWithSender:" destination="OP7-dX-GDx" eventType="touchUpInside" id="Knz-BL-UsC"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.57647058819999997" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
