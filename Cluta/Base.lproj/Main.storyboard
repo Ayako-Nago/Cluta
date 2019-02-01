@@ -108,10 +108,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataCell" rowHeight="30" id="Kmz-2D-SeP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataCell" rowHeight="30" id="Kmz-2D-SeP" customClass="CustomCell" customModule="Cluta" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kmz-2D-SeP" id="5D2-Mp-Vfi">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kmz-2D-SeP" id="5D2-Mp-Vfi" customClass="CustomCell" customModule="Cluta" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="29.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -120,7 +120,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="×"/>
                                                     <connections>
-                                                        <action selector="ng" destination="8dr-qH-CUw" eventType="touchUpInside" id="mUp-Hq-1by"/>
+                                                        <action selector="batuButtonTapped:" destination="Kmz-2D-SeP" eventType="touchUpInside" id="oeF-aT-9hQ"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAz-Bz-fN9">
@@ -128,11 +128,20 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="○"/>
                                                     <connections>
-                                                        <action selector="ok" destination="8dr-qH-CUw" eventType="touchUpInside" id="shv-bz-YIH"/>
+                                                        <action selector="maruButtonTapped:" destination="5D2-Mp-Vfi" eventType="touchUpInside" id="l3l-Nx-TQG"/>
+                                                        <action selector="maruButtonTapped:" destination="Kmz-2D-SeP" eventType="touchUpInside" id="y9J-11-MRR"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <connections>
+                                                <outlet property="batuButton" destination="Wqy-a8-zSm" id="Sla-hV-YTl"/>
+                                                <outlet property="maruButton" destination="xAz-Bz-fN9" id="mCy-ZT-keg"/>
+                                            </connections>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="batuButton" destination="Wqy-a8-zSm" id="ber-tP-hjE"/>
+                                            <outlet property="maruButton" destination="xAz-Bz-fN9" id="IeW-wQ-1fu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
