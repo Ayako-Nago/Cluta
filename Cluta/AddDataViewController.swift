@@ -10,7 +10,7 @@ import UIKit
 
 class AddDataViewController: UIViewController{
     
-    var DataDictionary : [String:Any] = ["name":"name","Aok":0,"Ang":0,"Bok":0,"Bng":0,"Cok":0,"Cng":0,"Dok":0,"Dng":0,"Eok":0,"Eng":0]
+    var DataDictionary : [String:Any] = ["name":"name","Aok":0,"Ang":0,"a":0,"Bok":0,"Bng":0,"b":0,"Cok":0,"Cng":0,"c":0,"Dok":0,"Dng":0,"d":0,"Eok":0,"Eng":0,"e":0]
     
     var DataListArray : [[String: Any]]!
     
@@ -24,14 +24,13 @@ class AddDataViewController: UIViewController{
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as? [Dictionary<String,Any>]
         }
-
+        
         
     }
     
     @IBAction func save(_ sender: Any) {
         
-        
-        DataListArray.append(["name":AddTextField.text!,"Aok":0,"Ang":0,"Bok":0,"Bng":0,"Cok":0,"Cng":0,"Dok":0,"Dng":0,"Eok":0,"Eng":0])
+        DataListArray.append(["name":AddTextField.text!,"Aok":0,"Ang":0,"a":0,"Bok":0,"Bng":0,"b":0,"Cok":0,"Cng":0,"c":0,"Dok":0,"Dng":0,"d":0,"Eok":0,"Eng":0,"e":0])
         
         AddTextField.text=""
         

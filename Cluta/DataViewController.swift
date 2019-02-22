@@ -9,14 +9,14 @@
 import UIKit
 
 class DataViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
-   
+    
     
     
     var DataListArray = [[String: Any]]()
     
     var saveData : UserDefaults = UserDefaults.standard
     
-   // @IBOutlet var table : UITableView!
+    // @IBOutlet var table : UITableView!
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
@@ -42,7 +42,7 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataListArray.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let DataCell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
         DataCell.textLabel!.text = DataListArray[indexPath.row]["name"] as? String
@@ -61,9 +61,9 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
     
     
     @IBAction func next(){
-//        let addViewController = AddDataViewController()
-//        self.present(addViewController, animated: true, completion: nil)
-//        self.performSegue(withIdentifier: "toNext", sender: nil)
+        //        let addViewController = AddDataViewController()
+        //        self.present(addViewController, animated: true, completion: nil)
+        //        self.performSegue(withIdentifier: "toNext", sender: nil)
     }
     
     

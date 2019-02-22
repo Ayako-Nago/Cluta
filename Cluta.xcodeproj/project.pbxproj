@@ -26,7 +26,9 @@
 		C25F439D214BB7380037CBD0 /* ZakkuriGothic-BLK.otf in Resources */ = {isa = PBXBuildFile; fileRef = C25F439C214BB71A0037CBD0 /* ZakkuriGothic-BLK.otf */; };
 		C26F7DA52195A3BF00BA32E5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */; };
 		C2711993219ED90100B34D49 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2711992219ED90100B34D49 /* AddDataViewController.swift */; };
+		C28348072216C877002689D8 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28348062216C876002689D8 /* InfoCell.swift */; };
 		C2A54A0622043EC800184836 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A54A0522043EC800184836 /* CustomCell.swift */; };
+		C2D6A068220D8D6F002236FE /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D6A067220D8D6F002236FE /* PlayerData.swift */; };
 		C2F5DB1C21B1302600074443 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F5DB1B21B1302600074443 /* InfoViewController.swift */; };
 		C2F5DB2021B1364400074443 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F5DB1F21B1364400074443 /* NavigationController.swift */; };
 		C2F5DB2221B143DB00074443 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F5DB2121B143DB00074443 /* InformationViewController.swift */; };
@@ -80,7 +82,9 @@
 		C25F439C214BB71A0037CBD0 /* ZakkuriGothic-BLK.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZakkuriGothic-BLK.otf"; sourceTree = "<group>"; };
 		C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		C2711992219ED90100B34D49 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
+		C28348062216C876002689D8 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		C2A54A0522043EC800184836 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C2D6A067220D8D6F002236FE /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		C2F5DB1B21B1302600074443 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C2F5DB1F21B1364400074443 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C2F5DB2121B143DB00074443 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
@@ -197,8 +201,10 @@
 				C2F5DB1B21B1302600074443 /* InfoViewController.swift */,
 				C2F5DB2321B14AC300074443 /* InputViewController.swift */,
 				C2F5DB2521B14B7400074443 /* InputDataViewController.swift */,
+				C2D6A067220D8D6F002236FE /* PlayerData.swift */,
 				C2A54A0522043EC800184836 /* CustomCell.swift */,
 				C2383A6621BA800600686D0D /* ChartViewController.swift */,
+				C28348062216C876002689D8 /* InfoCell.swift */,
 			);
 			path = Cluta;
 			sourceTree = "<group>";
@@ -460,8 +466,10 @@
 				C2F5DB2221B143DB00074443 /* InformationViewController.swift in Sources */,
 				C2F5DB2421B14AC300074443 /* InputViewController.swift in Sources */,
 				C25F4371214BACAC0037CBD0 /* ViewController.swift in Sources */,
+				C2D6A068220D8D6F002236FE /* PlayerData.swift in Sources */,
 				C2F5DB2621B14B7400074443 /* InputDataViewController.swift in Sources */,
 				C25F436F214BACAC0037CBD0 /* AppDelegate.swift in Sources */,
+				C28348072216C877002689D8 /* InfoCell.swift in Sources */,
 				C2711993219ED90100B34D49 /* AddDataViewController.swift in Sources */,
 				C2F5DB1C21B1302600074443 /* InfoViewController.swift in Sources */,
 				C2383A6721BA800600686D0D /* ChartViewController.swift in Sources */,

@@ -12,8 +12,9 @@ class InformationViewController: UIViewController {
     
     var segueNumber : UserDefaults = UserDefaults.standard
     var number: Int!
+    let playerData = PlayerData.shared
     
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let infoViewController = segue.destination as? InfoViewController
         infoViewController?.number = number
@@ -21,28 +22,23 @@ class InformationViewController: UIViewController {
     
     
     @IBAction func aTapped(){
-        number = 1
+        playerData.number = 1
         performSegue(withIdentifier: "toInfo",sender: nil)
-        print(number)
     }
     @IBAction func bTapped(){
-        number = 2
+        playerData.number = 2
         performSegue(withIdentifier: "toInfo",sender: nil)
-        print(number)
     }
     @IBAction func cTapped(){
-        number = 3
+        playerData.number = 3
         performSegue(withIdentifier: "toInfo",sender: nil)
-        print(number)
     }
     @IBAction func dTapped(){
-        number = 4
+        playerData.number = 4
         performSegue(withIdentifier: "toInfo",sender: nil)
-        print(number)
     }
     @IBAction func eTapped(){
-        number = 5
+        playerData.number = 5
         performSegue(withIdentifier: "toInfo",sender: nil)
-        print(number)
     }
 }
