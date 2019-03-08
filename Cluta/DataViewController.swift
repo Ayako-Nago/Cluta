@@ -13,7 +13,7 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
     
     
     var DataListArray = [[String: Any]]()
-    
+    let playerData = PlayerData.shared
     var saveData : UserDefaults = UserDefaults.standard
     
     // @IBOutlet var table : UITableView!
@@ -51,10 +51,14 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            for i in indexPath.row...DataListArray.count-1 {
+                DataListArray[i]["n"] = DataListArray[i]["n"] as! Int - 1
+            }
             DataListArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             print(DataListArray)
             saveData.set(DataListArray, forKey: "DataList")
+            playerData.n = playerData.n - 1
             print(DataListArray)
         }
     }

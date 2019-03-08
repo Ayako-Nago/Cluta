@@ -17,12 +17,14 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
     var DataListArray = [[String :Any]]()
     var saveData : UserDefaults = UserDefaults.standard
     let playerData = PlayerData.shared
+    var i: Int=0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("number", playerData.number)
         tableView.delegate = self
         tableView.dataSource = self
+        
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
@@ -37,11 +39,11 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
         playerData.dngArray = DataListArray.map{$0["Dng"] as? Int ?? 0}
         playerData.eokArray = DataListArray.map{$0["Eok"] as? Int ?? 0}
         playerData.engArray = DataListArray.map{$0["Eng"] as? Int ?? 0}
-        playerData.aArray = DataListArray.map{$0["a"] as? Int ?? 0}
-        playerData.bArray = DataListArray.map{$0["b"] as? Int ?? 0}
-        playerData.cArray = DataListArray.map{$0["c"] as? Int ?? 0}
-        playerData.dArray = DataListArray.map{$0["d"] as? Int ?? 0}
-        playerData.eArray = DataListArray.map{$0["e"] as? Int ?? 0}
+        playerData.aArray = DataListArray.map{$0["A"] as? Int ?? 0}
+        playerData.bArray = DataListArray.map{$0["B"] as? Int ?? 0}
+        playerData.cArray = DataListArray.map{$0["C"] as? Int ?? 0}
+        playerData.dArray = DataListArray.map{$0["D"] as? Int ?? 0}
+        playerData.eArray = DataListArray.map{$0["E"] as? Int ?? 0}
         
     }
     
@@ -57,8 +59,27 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
         super.viewWillDisappear(animated)
         
         //DataListArrayを更新
+        DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
         //for文を使って、番号を指定、要素を指定、そこの中に、playerData.~Arrayの要素を代入する
-        
+        for i in 0...DataListArray.count-1{
+            print(i)
+            DataListArray[i]["Aok"] = playerData.aokArray[i]
+            DataListArray[i]["Ang"] = playerData.angArray[i]
+            DataListArray[i]["A"] = playerData.aArray[i]
+            DataListArray[i]["Bok"] = playerData.bokArray[i]
+            DataListArray[i]["Bng"] = playerData.bngArray[i]
+            DataListArray[i]["B"] = playerData.bArray[i]
+            DataListArray[i]["Cok"] = playerData.cokArray[i]
+            DataListArray[i]["Cng"] = playerData.cngArray[i]
+            DataListArray[i]["C"] = playerData.cArray[i]
+            DataListArray[i]["Dok"] = playerData.dokArray[i]
+            DataListArray[i]["Dng"] = playerData.dngArray[i]
+            DataListArray[i]["D"] = playerData.dArray[i]
+            DataListArray[i]["Eok"] = playerData.eokArray[i]
+            DataListArray[i]["Eng"] = playerData.engArray[i]
+            DataListArray[i]["E"] = playerData.eArray[i]
+        }
         //userDefaultに保存
+        saveData.set(DataListArray,forKey:"DataList" )
     }
 }

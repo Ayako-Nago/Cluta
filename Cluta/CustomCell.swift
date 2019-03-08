@@ -14,7 +14,7 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var batuButton:UIButton!
     var DataListArray = [[String: Any]]()
     var saveData : UserDefaults = UserDefaults.standard
-    
+    var i: Int!
     //ここでもシングルトンでデータクラスを呼んでいるよ
     let playerData = PlayerData.shared
     
@@ -33,26 +33,26 @@ class CustomCell: UITableViewCell {
         if playerData.number == 1 {
             playerData.aokArray[sender.tag] = playerData.aokArray[sender.tag] + 1
             playerData.angArray[sender.tag] = playerData.angArray[sender.tag] + 1
-            playerData.aArray[sender.tag] = playerData.aokArray[sender.tag] / playerData.angArray[sender.tag]
+            playerData.aArray[sender.tag] = 100 * playerData.aokArray[sender.tag] / playerData.angArray[sender.tag]
             
             print(playerData.aokArray)
         }else if playerData.number == 2 {
             playerData.bokArray[sender.tag] = playerData.bokArray[sender.tag] + 1
             playerData.bngArray[sender.tag] = playerData.bngArray[sender.tag] + 1
-            playerData.bArray[sender.tag] = playerData.bokArray[sender.tag] / playerData.bngArray[sender.tag]
+            playerData.bArray[sender.tag] = 100 * playerData.bokArray[sender.tag] / playerData.bngArray[sender.tag]
 
         }else if playerData.number == 3{
             playerData.cokArray[sender.tag] = playerData.cokArray[sender.tag] + 1
             playerData.cngArray[sender.tag] = playerData.cngArray[sender.tag] + 1
-            playerData.cArray[sender.tag] = playerData.cokArray[sender.tag] / playerData.cngArray[sender.tag]
+            playerData.cArray[sender.tag] = 100 * playerData.cokArray[sender.tag] / playerData.cngArray[sender.tag]
         }else if playerData.number == 4{
             playerData.dokArray[sender.tag] = playerData.dokArray[sender.tag] + 1
             playerData.dngArray[sender.tag] = playerData.dngArray[sender.tag] + 1
-            playerData.dArray[sender.tag] = playerData.dokArray[sender.tag] / playerData.dngArray[sender.tag]
+            playerData.dArray[sender.tag] = 100 * playerData.dokArray[sender.tag] / playerData.dngArray[sender.tag]
         }else if playerData.number == 5{
             playerData.eokArray[sender.tag] = playerData.eokArray[sender.tag] + 1
             playerData.engArray[sender.tag] = playerData.engArray[sender.tag] + 1
-            playerData.eArray[sender.tag] = playerData.eokArray[sender.tag] / playerData.engArray[sender.tag]
+            playerData.eArray[sender.tag] = 100 * playerData.eokArray[sender.tag] / playerData.engArray[sender.tag]
         }
         
 //        saveData.set(DataListArray, forKey: "DataList")
@@ -61,19 +61,19 @@ class CustomCell: UITableViewCell {
     @IBAction func batuButtonTapped(_ sender:UIButton){
         if playerData.number == 1 {
             playerData.angArray[sender.tag] = playerData.angArray[sender.tag] + 1
-            playerData.aArray[sender.tag] = playerData.aokArray[sender.tag] / playerData.angArray[sender.tag]
+            playerData.aArray[sender.tag] = 100 * playerData.aokArray[sender.tag] / playerData.angArray[sender.tag]
         }else if playerData.number == 2 {
             playerData.bngArray[sender.tag] = playerData.bngArray[sender.tag] + 1
-            playerData.bArray[sender.tag] = playerData.bokArray[sender.tag] / playerData.bngArray[sender.tag]
+            playerData.bArray[sender.tag] = 100 * playerData.bokArray[sender.tag] / playerData.bngArray[sender.tag]
         }else if playerData.number == 3{
             playerData.cngArray[sender.tag] = playerData.cngArray[sender.tag] + 1
-            playerData.cArray[sender.tag] = playerData.cokArray[sender.tag] / playerData.cngArray[sender.tag]
+            playerData.cArray[sender.tag] = 100 * playerData.cokArray[sender.tag] / playerData.cngArray[sender.tag]
         }else if playerData.number == 4{
             playerData.dngArray[sender.tag] = playerData.dngArray[sender.tag] + 1
-            playerData.dArray[sender.tag] = playerData.dokArray[sender.tag] / playerData.dngArray[sender.tag]
+            playerData.dArray[sender.tag] = 100 * playerData.dokArray[sender.tag] / playerData.dngArray[sender.tag]
         }else if playerData.number == 5{
             playerData.engArray[sender.tag] = playerData.engArray[sender.tag] + 1
-            playerData.eArray[sender.tag] = playerData.eokArray[sender.tag] / playerData.engArray[sender.tag]
+            playerData.eArray[sender.tag] = 100 * playerData.eokArray[sender.tag] / playerData.engArray[sender.tag]
         }
 //        saveData.set(DataListArray, forKey: "DataList")
     }

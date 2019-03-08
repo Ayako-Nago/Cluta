@@ -15,10 +15,16 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     var number: Int!
     let segueNumber: UserDefaults = UserDefaults.standard
     var row: Int!
+    var way: Int!
     
     
+    @IBOutlet weak var tableView: UITableView!{
+        didSet {
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
+    }
     
-    @IBOutlet weak var tableView: UITableView!
     var DataListArray = [[String: Any]]()
     var saveData : UserDefaults = UserDefaults.standard
     var aArray = [[String: Any]]()
@@ -62,30 +68,55 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         dArray = DataListArray
         eArray = DataListArray
         aArray.sort{
-            (($0 as Dictionary<String, Any>)["a"] as! Int) < (($1 as Dictionary<String, Any>)["a"] as! Int)
+            (($0 as Dictionary<String, Any>)["A"] as! Int) < (($1 as Dictionary<String, Any>)["A"] as! Int)
         }
         bArray.sort{
-            (($0 as Dictionary<String, Any>)["b"] as! Int) < (($1 as Dictionary<String, Any>)["b"] as! Int)
+            (($0 as Dictionary<String, Any>)["B"] as! Int) < (($1 as Dictionary<String, Any>)["B"] as! Int)
         }
         cArray.sort{
-            (($0 as Dictionary<String, Any>)["c"] as! Int) < (($1 as Dictionary<String, Any>)["c"] as! Int)
+            (($0 as Dictionary<String, Any>)["C"] as! Int) < (($1 as Dictionary<String, Any>)["C"] as! Int)
         }
         dArray.sort{
-            (($0 as Dictionary<String, Any>)["d"] as! Int) < (($1 as Dictionary<String, Any>)["d"] as! Int)
+            (($0 as Dictionary<String, Any>)["D"] as! Int) < (($1 as Dictionary<String, Any>)["D"] as! Int)
         }
         eArray.sort{
-            (($0 as Dictionary<String, Any>)["e"] as! Int) < (($1 as Dictionary<String, Any>)["e"] as! Int)
+            (($0 as Dictionary<String, Any>)["E"] as! Int) < (($1 as Dictionary<String, Any>)["E"] as! Int)
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let chartViewController = segue.destination as! ChartViewController
-        
-        chartViewController.index = row 
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataListArray.count
     }
+    
+    //ここで画面遷移のコードを書いている
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        if playerData.number == 1{
+            way = aArray[indexPath.row]["n"] as? Int
+            print(way ,"aArray")
+        }else if playerData.number == 2{
+            way = bArray[indexPath.row]["n"] as? Int
+        }else if playerData.number == 3{
+            way = cArray[indexPath.row]["n"] as? Int
+        }else if playerData.number == 4{
+            way = dArray[indexPath.row]["n"] as? Int
+        }else if playerData.number == 5{
+            way = eArray[indexPath.row]["n"] as? Int
+        }
+//        ChartViewController.way = way as! Int
+        print(indexPath.row)
+         self.performSegue(withIdentifier: "toChart", sender: way)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let chartViewController = segue.destination as! ChartViewController
+        print(way, "prepare")
+        chartViewController.way = way
+        //        let arrayNumber = sender as! Int
+        //        print(aArray[arrayNumber])
+        //        chartViewController.independent =
+    }
+    
 }
 
