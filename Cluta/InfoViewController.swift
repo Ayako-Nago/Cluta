@@ -59,7 +59,13 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        skillArray = skillData.object(forKey: "skills") as! [String]
+        let savedArray = skillData.object(forKey: "skills")
+        if savedArray != nil{
+            skillArray = savedArray as![String]
+        }else{
+            skillArray = ["A","B","C","D","E"]
+            
+        }
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
