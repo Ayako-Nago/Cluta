@@ -13,7 +13,8 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataListArray.count
     }
-    
+    var skillData: UserDefaults = UserDefaults.standard
+    var skillArray:[String] = []
     var DataListArray = [[String :Any]]()
     var saveData : UserDefaults = UserDefaults.standard
     let playerData = PlayerData.shared
@@ -21,10 +22,23 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        skillArray = skillData.object(forKey: "skills") as! [String]
         print("number", playerData.number)
         tableView.delegate = self
         tableView.dataSource = self
         
+//        self.title = independent["name"] as! String
+        if playerData.number == 1{
+            self.title = skillArray[0]
+        }else if playerData.number == 2{
+            self.title = skillArray[1]
+        }else if playerData.number == 3{
+            self.title = skillArray[2]
+        }else if playerData.number == 4{
+            self.title = skillArray[3]
+        }else if playerData.number == 5{
+            self.title = skillArray[4]
+        }
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
@@ -44,8 +58,7 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
         playerData.cArray = DataListArray.map{$0["C"] as? Int ?? 0}
         playerData.dArray = DataListArray.map{$0["D"] as? Int ?? 0}
         playerData.eArray = DataListArray.map{$0["E"] as? Int ?? 0}
-        
-    }
+        }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "DataCell") as! CustomCell

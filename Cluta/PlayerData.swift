@@ -12,7 +12,7 @@ class PlayerData {
     //ここでシングルトンを生成しているよ
     static let shared = PlayerData()
     
-    var n: Int=0
+    var n: Int = 0
     var number: Int!
     var aokArray = [Int]()
     var angArray = [Int]()

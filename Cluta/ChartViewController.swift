@@ -20,8 +20,11 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     @IBOutlet var chartView: RadarChartView!
     var independent : [String:Any] = [:]
     var way : Int!
-    
     let activities = ["A", "B", "C", "D", "E"]
+    @IBOutlet var ok: UILabel!
+    @IBOutlet var ng: UILabel!
+    var oknum : Int = 0
+    var ngnum : Int = 0
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -29,8 +32,49 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let DataCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as! InfoCell
-        DataCell.textLabel!.text = skillArray[indexPath.row]
-        DataCell.all.text = ""
+//        DataCell.textLabel!.text = skillArray[indexPath.row]
+        if indexPath.row == 0{
+            oknum = independent["Aok"] as? Int ?? 0
+            ngnum = independent["Ang"] as? Int ?? 0
+//            ok.text = String(oknum)
+//            ng.text = String(ngnum)
+            DataCell.all.text = String(ngnum)
+            DataCell.clear.text = String(oknum)
+            DataCell.name.text = "A"
+        }else if indexPath.row == 1{
+            oknum = independent["Bok"] as? Int ?? 0
+            ngnum = independent["Bng"] as? Int ?? 0
+//            ok.text = String(oknum)
+//            ng.text = String(ngnum)
+            DataCell.all.text = String(ngnum)
+            DataCell.clear.text = String(oknum)
+            DataCell.name.text = "B"
+        }else if indexPath.row == 2{
+            oknum = independent["Cok"] as? Int ?? 0
+            ngnum = independent["Cng"] as? Int ?? 0
+//            ok.text = String(oknum)
+//            ng.text = String(ngnum)
+            DataCell.all.text = String(ngnum)
+            DataCell.clear.text = String(oknum)
+            DataCell.name.text = "C"
+        }else if indexPath.row == 3{
+            oknum = independent["Dok"] as? Int ?? 0
+            ngnum = independent["Dng"] as? Int ?? 0
+//            ok.text = String(oknum)
+//            ng.text = String(ngnum)
+            DataCell.all.text = String(ngnum)
+            DataCell.clear.text = String(oknum)
+            DataCell.name.text = "D"
+        }else if indexPath.row == 4{
+            oknum = independent["Eok"] as? Int ?? 0
+            ngnum = independent["Eng"] as? Int ?? 0
+//            ok.text = String(oknum)
+//            ng.text = String(ngnum)
+            DataCell.all.text = String(ngnum)
+            DataCell.clear.text = String(oknum)
+            DataCell.name.text = "E"
+        }
+        
         return DataCell
     }
     
@@ -48,9 +92,11 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         }
         
         independent = DataListArray[way]
+//        var okArray = [independent["Aok"],independent["Bok"],independent["Cok"],independent["Dok"],independent["Eok"]]
+//        var ngArray = [independent["Ang"],independent["Bng"],independent["Cng"],independent["Dng"],independent["Eng"]]
+        self.title = independent["name"] as! String
         
-        self.title = "Radar Chart"
-       
+        tableView.rowHeight = 60
         
         chartView.chartDescription?.enabled = false
         chartView.webLineWidth = 1
@@ -139,7 +185,7 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //        let entries2 = (0..<cnt).map(block)
         //
         
-        let set1 = RadarChartDataSet(values: entries1, label: "Last Week")
+        let set1 = RadarChartDataSet(values: entries1, label: "")
         set1.setColor(UIColor(red: 103/255, green: 110/255, blue: 129/255, alpha: 1))
         set1.fillColor = UIColor(red: 103/255, green: 110/255, blue: 129/255, alpha: 1)
         set1.drawFilledEnabled = true

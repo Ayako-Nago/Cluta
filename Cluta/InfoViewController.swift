@@ -16,6 +16,8 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     let segueNumber: UserDefaults = UserDefaults.standard
     var row: Int!
     var way: Int!
+    var skillData: UserDefaults = UserDefaults.standard
+    var skillArray:[String] = []
     
     
     @IBOutlet weak var tableView: UITableView!{
@@ -57,9 +59,21 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        skillArray = skillData.object(forKey: "skills") as! [String]
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
+        }
+        if playerData.number == 1{
+            self.title = skillArray[0]
+        }else if playerData.number == 2{
+            self.title = skillArray[1]
+        }else if playerData.number == 3{
+            self.title = skillArray[2]
+        }else if playerData.number == 4{
+            self.title = skillArray[3]
+        }else if playerData.number == 5{
+            self.title = skillArray[4]
         }
         print(DataListArray)
         aArray = DataListArray

@@ -27,6 +27,8 @@
 		C26F7DA52195A3BF00BA32E5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */; };
 		C2711993219ED90100B34D49 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2711992219ED90100B34D49 /* AddDataViewController.swift */; };
 		C28348072216C877002689D8 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28348062216C876002689D8 /* InfoCell.swift */; };
+		C28720A3223C080600418BB7 /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = C28720A2223C080600418BB7 /* wheel.png */; };
+		C29606032240D7E000AE0009 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29606022240D7E000AE0009 /* SaveViewController.swift */; };
 		C2A54A0622043EC800184836 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A54A0522043EC800184836 /* CustomCell.swift */; };
 		C2D6A068220D8D6F002236FE /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D6A067220D8D6F002236FE /* PlayerData.swift */; };
 		C2F5DB1C21B1302600074443 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F5DB1B21B1302600074443 /* InfoViewController.swift */; };
@@ -83,6 +85,8 @@
 		C26F7DA42195A3BF00BA32E5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		C2711992219ED90100B34D49 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
 		C28348062216C876002689D8 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		C28720A2223C080600418BB7 /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
+		C29606022240D7E000AE0009 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		C2A54A0522043EC800184836 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C2D6A067220D8D6F002236FE /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		C2F5DB1B21B1302600074443 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		C24E97642154EF6C00A0ADC5 /* あーやの五角形 */ = {
 			isa = PBXGroup;
 			children = (
+				C28720A2223C080600418BB7 /* wheel.png */,
 				C24E97652154EF6C00A0ADC5 /* ao.png */,
 				C24E97662154EF6C00A0ADC5 /* clear.png */,
 				C24E97672154EF6C00A0ADC5 /* hasen.png */,
@@ -205,6 +210,7 @@
 				C2A54A0522043EC800184836 /* CustomCell.swift */,
 				C2383A6621BA800600686D0D /* ChartViewController.swift */,
 				C28348062216C876002689D8 /* InfoCell.swift */,
+				C29606022240D7E000AE0009 /* SaveViewController.swift */,
 			);
 			path = Cluta;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 				C24E97702154EF6C00A0ADC5 /* shiro.png in Resources */,
 				C24E976E2154EF6C00A0ADC5 /* hasen2.png in Resources */,
 				C25F4374214BACAC0037CBD0 /* Main.storyboard in Resources */,
+				C28720A3223C080600418BB7 /* wheel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +480,7 @@
 				C2711993219ED90100B34D49 /* AddDataViewController.swift in Sources */,
 				C2F5DB1C21B1302600074443 /* InfoViewController.swift in Sources */,
 				C2383A6721BA800600686D0D /* ChartViewController.swift in Sources */,
+				C29606032240D7E000AE0009 /* SaveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aya.Cluta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -675,7 +683,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aya.Cluta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

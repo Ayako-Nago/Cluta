@@ -14,6 +14,7 @@ class InfoCell: UITableViewCell {
     @IBOutlet var clear: UILabel!
     let playerData = PlayerData.shared
     let skillArray = ["A","B","C","D","E"]
+    @IBOutlet var name: UILabel!
     
     
     override func awakeFromNib() {

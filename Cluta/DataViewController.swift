@@ -15,6 +15,7 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
     var DataListArray = [[String: Any]]()
     let playerData = PlayerData.shared
     var saveData : UserDefaults = UserDefaults.standard
+    let saveN: UserDefaults = UserDefaults.standard
     
     // @IBOutlet var table : UITableView!
     @IBOutlet var table: UITableView!
@@ -22,8 +23,8 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("Did")
-        
+//        print("Did")
+        print("viewDidload",playerData.n)
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
         }
@@ -59,6 +60,7 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
             print(DataListArray)
             saveData.set(DataListArray, forKey: "DataList")
             playerData.n = playerData.n - 1
+            saveN.set(playerData.n, forKey: "num")
             print(DataListArray)
         }
     }

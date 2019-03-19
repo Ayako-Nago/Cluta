@@ -16,6 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let playerData = PlayerData.shared
+        let saveN: UserDefaults = UserDefaults.standard
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        //ここから下で、userdefaultを呼び出して、値を入れる
+         let savedNumber = saveN.integer(forKey: "num")
+        
+        if savedNumber != nil {
+            playerData.n = savedNumber
+        }
+//        if playerData.n != 0{
+//            
+//            playerData.n = saveN.object(forKey: "num") as! Int
+//            
+//        }
+//        saveN.set(playerData.n, forKey: "num")
+        
         return true
     }
 
