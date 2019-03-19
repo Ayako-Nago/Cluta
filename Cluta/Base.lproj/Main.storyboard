@@ -201,8 +201,8 @@
                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="C" id="z3S-ip-rMc">
-                                        <barButtonItem key="leftBarButtonItem" title="く" id="fcF-ji-oKM">
+                                    <navigationItem id="z3S-ip-rMc">
+                                        <barButtonItem key="leftBarButtonItem" id="fcF-ji-oKM">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </barButtonItem>
                                     </navigationItem>
@@ -513,8 +513,8 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="名前" id="ZdZ-PS-7RE">
-                                        <barButtonItem key="leftBarButtonItem" title="く" id="DF2-jC-SHl">
+                                    <navigationItem id="ZdZ-PS-7RE">
+                                        <barButtonItem key="leftBarButtonItem" id="DF2-jC-SHl">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </barButtonItem>
                                     </navigationItem>

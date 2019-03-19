@@ -16,13 +16,19 @@ class SaveViewController: UIViewController{
     @IBOutlet var c:UILabel!
     @IBOutlet var d:UILabel!
     @IBOutlet var e:UILabel!
-    var skillArray:[String] = ["A","B","C","D","E"]
+    var skillArray:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        skillArray = skillData.object(forKey: "skills") as! [String]
+        let savedArray = skillData.object(forKey: "skills")
+        if savedArray != nil{
+            skillArray = savedArray as![String]
+        }else{
+            skillArray = ["A","B","C","D","E"]
+            
+        }
         a.text = String(skillArray[0])
-        b.text = String(skillArray[1])
+        b.text = String(skillArray[1]) 
         c.text = String(skillArray[2])
         d.text = String(skillArray[3])
         e.text = String(skillArray[4])

@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//        self.UINavigationBar.appearance().shadowImage = UIImage()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
