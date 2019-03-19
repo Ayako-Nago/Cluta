@@ -21,7 +21,12 @@ class InPutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        skillArray = skillData.object(forKey: "skills") as! [String]
+        let savedArray = skillData.object(forKey: "skills")
+        if savedArray != nil{
+            skillArray = savedArray as![String]
+        }else{
+            skillArray = ["A","B","C","D","E"]
+        }
         a.text = String(skillArray[0])
         b.text = String(skillArray[1])
         c.text = String(skillArray[2])
