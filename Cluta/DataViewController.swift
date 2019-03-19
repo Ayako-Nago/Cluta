@@ -47,6 +47,7 @@ class DataViewController: UIViewController , UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let DataCell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
         DataCell.textLabel!.text = DataListArray[indexPath.row]["name"] as? String
+        DataCell.selectionStyle = UITableViewCell.SelectionStyle.none
         return DataCell
     }
     

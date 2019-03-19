@@ -28,13 +28,14 @@ class InformationViewController: UIViewController {
             skillArray = savedArray as![String]
         }else{
             skillArray = ["A","B","C","D","E"]
+        }
         a.text = String(skillArray[0])
         b.text = String(skillArray[1])
         c.text = String(skillArray[2])
         d.text = String(skillArray[3])
-            e.text = String(skillArray[4])
+        e.text = String(skillArray[4])
             
-        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -69,6 +69,7 @@ class InputDataViewController: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "DataCell") as! CustomCell
         cell.textLabel!.text = DataListArray[indexPath.row]["name"] as? String
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.maruButton.tag = indexPath.row
         cell.batuButton.tag = indexPath.row
         return cell

@@ -14,19 +14,21 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     @IBOutlet weak var tableView: UITableView!
     var DataListArray = [[String: Any]]()
     var saveData : UserDefaults = UserDefaults.standard
+    var skillData: UserDefaults = UserDefaults.standard
     let playerData = PlayerData.shared
-    let skillArray = ["A","B","C","D","E"]
+    var skillArray = [String]()
     var index : Int!
     @IBOutlet var chartView: RadarChartView!
     var independent : [String:Any] = [:]
     var way : Int!
-    let activities = ["A", "B", "C", "D", "E"]
+    var activitiesArray = [String]()
     @IBOutlet var ok: UILabel!
     @IBOutlet var ng: UILabel!
     var oknum : Int = 0
     var ngnum : Int = 0
+//    var skillArray:[String] = []
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
@@ -40,7 +42,7 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //            ng.text = String(ngnum)
             DataCell.all.text = String(ngnum)
             DataCell.clear.text = String(oknum)
-            DataCell.name.text = "A"
+            DataCell.name.text = skillArray[0]
         }else if indexPath.row == 1{
             oknum = independent["Bok"] as? Int ?? 0
             ngnum = independent["Bng"] as? Int ?? 0
@@ -48,7 +50,7 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //            ng.text = String(ngnum)
             DataCell.all.text = String(ngnum)
             DataCell.clear.text = String(oknum)
-            DataCell.name.text = "B"
+            DataCell.name.text = skillArray[1]
         }else if indexPath.row == 2{
             oknum = independent["Cok"] as? Int ?? 0
             ngnum = independent["Cng"] as? Int ?? 0
@@ -56,7 +58,7 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //            ng.text = String(ngnum)
             DataCell.all.text = String(ngnum)
             DataCell.clear.text = String(oknum)
-            DataCell.name.text = "C"
+            DataCell.name.text = skillArray[2]
         }else if indexPath.row == 3{
             oknum = independent["Dok"] as? Int ?? 0
             ngnum = independent["Dng"] as? Int ?? 0
@@ -64,7 +66,7 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //            ng.text = String(ngnum)
             DataCell.all.text = String(ngnum)
             DataCell.clear.text = String(oknum)
-            DataCell.name.text = "D"
+            DataCell.name.text = skillArray[3]
         }else if indexPath.row == 4{
             oknum = independent["Eok"] as? Int ?? 0
             ngnum = independent["Eng"] as? Int ?? 0
@@ -72,7 +74,7 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //            ng.text = String(ngnum)
             DataCell.all.text = String(ngnum)
             DataCell.clear.text = String(oknum)
-            DataCell.name.text = "E"
+            DataCell.name.text = skillArray[4]
         }
         
         return DataCell
@@ -80,12 +82,17 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     override func viewDidLoad() {
         
-        
         super.viewDidLoad()
+        let savedArray = skillData.object(forKey: "skills")
+        if savedArray != nil{
+            skillArray = savedArray as![String]
+        }else{
+            skillArray = ["A","B","C","D","E"]
+        }
+        activitiesArray = skillArray
         tableView.delegate = self
         tableView.dataSource = self
         print(way ,"viewdidload")
-        
         
         if UserDefaults.standard.object(forKey: "DataList") != nil {
             DataListArray = saveData.object(forKey: "DataList") as! [[String: Any]]
@@ -259,7 +266,7 @@ class ChartViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
 extension ChartViewController: IAxisValueFormatter {
     func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        return activities[Int(value) % activities.count]
+        return activitiesArray[Int(value) % activitiesArray.count] as! String
     }
     
     

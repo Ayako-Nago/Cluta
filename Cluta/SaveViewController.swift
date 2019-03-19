@@ -11,6 +11,7 @@ import UIKit
 class SaveViewController: UIViewController{
     
     var skillData: UserDefaults = UserDefaults.standard
+
     @IBOutlet var a:UILabel!
     @IBOutlet var b:UILabel!
     @IBOutlet var c:UILabel!

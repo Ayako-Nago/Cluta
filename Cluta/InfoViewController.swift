@@ -38,6 +38,7 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let DataCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath)
+        DataCell.selectionStyle = UITableViewCell.SelectionStyle.none
 //        DataCell.textLabel!.text = DataListArray[indexPath.row]["name"] as? String
         if playerData.number == 1{
             DataCell.textLabel!.text = aArray[indexPath.row]["name"] as? String
